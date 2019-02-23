@@ -1,4 +1,9 @@
 PipelineSecrets: {}
+btcd-kube:
+  project:
+    namespace: lightning-kube-simnet
+    network: simnet
+    networkSuffix: -simnet
 cleanup:
   Annotations:
     helm.sh/hook: pre-delete
@@ -21,9 +26,3 @@ jenkins:
   Servers:
     Global: {}
 prow: {}
-
-btcd-kube:
-  project:    #TODO: Should clean this up. Remove redundancy of network & networkSuffix
-    namespace: lightning-kube-simnet
-    network: simnet
-    networkSuffix: -simnet
