@@ -2,8 +2,9 @@ PipelineSecrets: {}
 btcd-kube:
   project:
     namespace: lightning-kube-simnet
-    network: simnet2
+    network: simnet
     networkSuffix: -simnet
+    storage: 25Gi
 cleanup:
   Annotations:
     helm.sh/hook: pre-delete
