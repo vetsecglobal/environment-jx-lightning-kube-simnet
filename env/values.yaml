@@ -2,7 +2,7 @@ PipelineSecrets: {}
 btcd-kube:
   project:
     namespace: lightning-kube-simnet
-    network: simnet
+    network: simnet2
     networkSuffix: -simnet
 cleanup:
   Annotations:
