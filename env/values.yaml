@@ -15,7 +15,6 @@ btcd-kube:
       externalPort: 18556
       internalPort: 18556
 
-
 cleanup:
   Annotations:
     helm.sh/hook: pre-delete
