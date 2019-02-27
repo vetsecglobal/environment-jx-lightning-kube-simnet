@@ -12,13 +12,6 @@ btcd-kube:
     rpc:
       externalPort: 18556
       internalPort: 18556
-
-lndd-kube:
-  project:
-    namespace: lightning-kube-simnet
-    network: simnet
-    networkSuffix: -simnet
-
 cleanup:
   Annotations:
     helm.sh/hook: pre-delete
@@ -40,4 +33,9 @@ expose:
 jenkins:
   Servers:
     Global: {}
+lndd-kube:
+  project:
+    namespace: lightning-kube-simnet
+    network: simnet
+    networkSuffix: -simnet
 prow: {}
