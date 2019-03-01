@@ -12,3 +12,14 @@
 
 # Project-local glide cache, RE: https://github.com/Masterminds/glide/issues/736
 .glide/
+
+.idea
+*.iml
+.zip
+nohup.out
+
+**/*fixed.xml
+**/*fixed
+
+*fixed.xml
+*fixed
