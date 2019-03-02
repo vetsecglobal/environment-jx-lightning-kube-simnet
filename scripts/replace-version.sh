@@ -15,4 +15,4 @@ line=$((${line} + ${offset}))
 
 echo "line: ${line}"
 
-sed "${line}s/.*/${version}/" ${file}
+sed -i "${line}s/.*/${version}/" ${file}
